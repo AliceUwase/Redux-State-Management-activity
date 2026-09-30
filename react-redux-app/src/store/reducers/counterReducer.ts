@@ -1,6 +1,6 @@
 import { INCREMENT, DECREMENT, RESET } from "../actions/counterActions";
 
-interface ConterState {
+interface CounterState {
     value: number;
 }
 

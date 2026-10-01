@@ -5,8 +5,10 @@ import {rootReducer } from "./reducers";
 
 const logger = createLogger();
 
+// create a Redux store with the root reducer and logger middleware
 export const store = createStore(rootReducer, applyMiddleware(logger));
 
+// Define the root state and dispatch types
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 

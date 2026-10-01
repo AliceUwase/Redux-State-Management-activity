@@ -4,10 +4,12 @@ interface CounterState {
     value: number;
 }
 
+// Initial state for the counter reducer
 const initialState: CounterState = {
     value: 0,
 };
 
+// a reducer function that handles the counter actions and updates the state accordingly
 export const counterReducer = (state = initialState, action: any): CounterState => {
     switch (action.type) {
         case INCREMENT:
